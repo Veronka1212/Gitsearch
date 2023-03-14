@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Playfair Display SC", serif;
+  margin: 10px;
+  color: rgb(20, 122, 37);
+}
+
+.search-block {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: rgb(53, 167, 110);
+}
+
+.btn:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 20px;
+  padding: 8px 15px;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.user {
+  margin: 5px;
+  list-style-type: none;
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+.photo {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.user_container {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 30px 0;
+}
+
+.user_link {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 12;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #222222;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
